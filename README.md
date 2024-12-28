@@ -1,9 +1,9 @@
-###Dotfiles
+### Dotfiles
 
-##Requirements
-#Bash
+## Requirements
+# Bash
 ```
 pacman -S eza fastfetch
 ```
-#Vim
-#Hyprland
+# Vim
+# Hyprland
