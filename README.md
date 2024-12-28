@@ -1,4 +1,4 @@
-# Jablkovy kolac
+# Dotfiles
 ## Install dotfiles
 ```
 yay -S stow git
