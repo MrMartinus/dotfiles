@@ -1,0 +1,66 @@
+
+[window]
+opacity = 0.75
+blur = true
+dynamic_padding = true
+dynamic_title = false
+resize_increments = true
+
+[font]
+normal = { family = "Cascadia Mono", style = "Regular" }
+size = 13
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+#vi_mode_style = { shape = "Block", blinking = "Off" }
+blink_timeout = 0
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Up"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Down"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "PageUp"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key = "PageDown"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ScrollToTop"
+key = "Up"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollToBottom"
+key = "Down"
+mods = "Shift"
+
+[general]
+# https://alacritty.org/config-alacritty.html
+# https://toml.io/en/v1.0.0
+# https://github.com/alacritty/alacritty-theme
+
+import = [
+    "~/.config/alacritty/themes/ayu_dark.toml"
+]
+

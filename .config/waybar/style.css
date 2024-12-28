@@ -1,0 +1,124 @@
+* {
+    font-family: "DejaVu Sans Mono";
+    font-size: 16px;
+    color: #e6e8ea;
+}
+
+
+#mode { 
+    background-color: #900000;
+    color: #ffffff;
+    padding: 0px 5px 0px 5px;
+    border: 1px solid #2f343a;
+}
+
+
+.modules-left {
+    background-color: #222222;
+    padding: 0px 0px 0px 0px;
+}
+
+.modules-right {
+    background-color: #222222;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+#custom-logo {
+    background-color: #000000;
+    color: #1793d1;
+    font-size: 16px;
+    padding: 0px 0px 0px 0px;
+}
+
+#workspaces {
+}
+#workspaces button {
+    padding: 0px 5px 0px 5px; 
+    min-width: 1px;
+    color: #888888;
+}
+#workspaces button.focused { 
+    padding: 0px 11px 0px 11px; 
+    background-color: #285577;
+    color: #ffffff;
+}
+#workspaces button.active { 
+    padding: 0px 11px 0px 11px; 
+    background-color: #285577;
+    color: #ffffff;
+}
+
+window#waybar { 
+    background-color: #4a4a4a; /* #225877 */ 
+    color: #ffffff;    
+}
+#window {
+    color: #ffffff;
+    background-color: #4a4a4a; /* #285577 */
+    padding: 0px 0px 0px 0px;
+}
+window#waybar.empty #window {
+    background-color: transparent;
+    color: transparent;
+}
+window#waybar.empty {
+    background-color: #4a4a4a;
+    padding: 0px 0px 0px 0px;
+}
+
+#idle_inhibitor {
+    padding: 0px 0px 0px 0px;
+}
+
+#custom-updates {
+    padding: 0px 0px 0px 0px;
+}
+
+#pulseaudio {
+    padding: 0px 0px 0px 0px;
+}
+
+#network {
+    padding: 0px 0px 0px 0px;
+}
+#network.disconnected {
+    color: #ff5555;
+}
+
+#cpu{
+    padding: 0px 0px 0px 0px;
+}
+#memory{
+    padding: 0px 0px 0px 0px;
+}
+#disk{
+    padding: 0px 0px 0px 0px;
+}
+
+#clock {
+}
+
+#tray{
+    background-color: #323232;
+    padding: 0px 5px 0px 5px;
+}
+
+#custom-power {
+    background-color: #323232;
+    color: #ff0015;
+    font-size: 16px;
+    padding: 0px 5px 0px 5px;
+}
+
+
+
+#temperature, #backlight, #battery {
+    padding: 0px 15px 0px 15px;
+}
+
+#battery.critical {
+   color: #ff5555;
+}
+

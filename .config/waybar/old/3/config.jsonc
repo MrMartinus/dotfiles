@@ -1,0 +1,88 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 34, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": ["hyprland/workspaces", "idle_inhibitor", "pulseaudio", "network"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["hyprland/submap", "cpu", "memory", "tray", "clock"],
+    // Modules configuration
+     "hyprland/workspaces": {
+         "disable-scroll": true,
+         "all-outputs": true,
+         // "format": "{name}: {icon}",
+         "format": "{name}",
+         "on-scroll-up": "hyprctl dispatch workspace m-1 > /dev/null",
+         "on-scroll-down": "hyprctl dispatch workspace m+1 > /dev/null"
+     },
+    "keyboard-state": {
+        "numlock": false,
+        "capslock": false,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    "hyprland/window": {
+        "max-length": 50,
+        "separate-outputs": true
+    },
+    "hyprland/language": {
+        "format": "{}",
+        "max-length": 18
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 0
+    },
+    "clock": {
+	"interval": 1,
+	"format": "{:%H:%M:%S}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "network": {
+        "interface": "enp4s0", // (Optional) To force the use of this interface
+        "format-ethernet": "{ipaddr}",
+        "tooltip": false,
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+        // "scroll-step": 10, // %, can be a float
+        "format": "{volume}%{icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    }
+}

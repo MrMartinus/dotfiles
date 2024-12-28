@@ -1,0 +1,11 @@
+#!/bin/sh
+
+CHOICE=$(printf '%s\n' "Shutdown" "Reboot" "Sleep" "Lock" "Logout" | rofi -dmenu -p 'Shutdown Menu' -theme Arc-Dark -icon-theme "Papirus" -show-icons -terminal alacritty -font 'DejaVu Sans Mono 20')
+
+case "$CHOICE" in 
+	Shutdown) systemctl poweroff ;;
+	Reboot) systemctl reboot ;;
+	Sleep) systemctl suspend ;;
+	Lock) slock ;;
+	Logout) pkill Hyprland ;;
+esac

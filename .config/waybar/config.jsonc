@@ -1,0 +1,195 @@
+// -*- mode: jsonc -*-
+{
+    // "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    //"height": 32, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 0, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+	"custom/logo",
+	"hyprland/workspaces",
+	"hyprland/window"
+    ],
+    "modules-center": [
+    ],
+    "modules-right": [
+        "idle_inhibitor",
+	"custom/updates",
+        "pulseaudio",
+        "network",
+        "power-profiles-daemon",
+        "cpu",
+        "memory",
+	"disk",
+        "temperature",
+        "backlight",
+        "keyboard-state",
+        "battery",
+        "clock",
+        "tray",
+        "custom/power"
+    ],
+	"custom/logo": {
+        	"format": "  ",
+        	"tooltip": false,
+        	"on-click": "rofi -show drun -theme Arc-Dark -show drun -icon-theme 'Papirus' -show-icons -terminal alacritty -font 'DejaVu Sans Mono 14' &"
+	},
+ 
+	"hyprland/workspaces": {
+		"format": "{name}{icon}",
+		"format-icons": {
+			"1": "",
+			"2": "",
+			"3": "",
+			"4": "",
+			"5": "",
+			"active": "", /**/
+			"default": ""
+		}
+		//"persistent-workspaces": {
+		//	"*": 5 // 5 workspaces by default on every monitor
+		//}
+	},
+
+	"hyprland/window": {
+		"format": "{title}"
+	}, 
+
+	"idle_inhibitor": {
+        	"format": " {icon} | ",
+		"tooltip": false,
+        	"format-icons": {
+            		"activated": "",
+            		"deactivated": ""
+        	}
+    	},
+
+	"custom/updates": {
+    		"format": "📦{}| ",
+    		"escape": true,
+    		"exec": "~/.config/waybar/scripts/updates",
+		"tooltip": false,
+    		"interval": 1800,
+		"signal": 15
+    	},
+
+	"pulseaudio": {
+        	// "scroll-step": 1, // %, can be a float
+        	"format": "{icon} {volume}% | ",
+        	//"format": "{volume}% {icon} {format_source}",
+        	"format-bluetooth": "{volume}% {icon}  | ",
+        	"format-bluetooth-muted": "🔇 {icon} | ",
+        	"format-muted": "🔇 | ",
+        	"format-source": "{volume}% ",
+        	"format-source-muted": "",
+        	"format-icons": {
+            		"headphone": "🎧",
+            		"default": ["🔈", "🔉", "🔊"]
+        	},
+        	"on-click": "pavucontrol"
+    	},
+
+	"network": {
+        	// "interface": "wlp2*", // (Optional) To force the use of this interface
+        	"format-wifi": " {essid} ({signalStrength}%) | ",
+        	"format-ethernet": "🌍 {ipaddr} | ",
+        	"tooltip": false,
+        	"format-linked": " {ifname} (No IP) ",
+        	"format-disconnected": "⚠️ Disconnected"
+    	},
+
+	"cpu": {
+        	"format": "⚙️ {usage}% | ",
+        	"tooltip": false,
+		"interval": 2
+    	},
+
+	"memory": {
+        	"format": "🎟 {}% | ",
+		"interval": 10
+    	},
+
+	"disk": {
+    		"interval": 60,
+    		"format": "💾 {percentage_used}% | ",
+		"path": "/"
+	},
+
+	"clock": {
+		"interval": 1,
+		"format": "🕔 {:%H:%M:%S} ", 
+        	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        	"format-alt": "🗓️ {:%Y-%m-%d} "
+    	},
+
+	"tray": {
+        	// "icon-size": 21,
+        	"spacing": 10
+    	},
+
+	"custom/power": {
+        	"format" : "⏻",
+			"tooltip": false,
+			"on-click": "~/.config/waybar/scripts/rofi-shutdown"
+   	}, 
+
+
+
+
+
+	"backlight": {
+        	// "device": "acpi_video1",
+        	"format": "{percent}% {icon}",
+        	"format-icons": ["", "", "", "", "", "", "", "", ""]
+    	},
+
+	"battery": {
+        	"states": {
+            		// "good": 95,
+            		"warning": 30,
+            		"critical": 15
+        	},
+        	"format": "{capacity}% {icon}",
+        	"format-full": "{capacity}% {icon}",
+        	"format-charging": "{capacity}% 🔌",
+        	"format-plugged": "{capacity}% ✅",
+        	"format-alt": "{time} {icon}",
+        	// "format-good": "", // An empty format will hide the module
+        	// "format-full": "",
+        	"format-icons": ["", "", "", "", ""]
+    	},
+
+   	"keyboard-state": {
+        	"numlock": true,
+        	"capslock": true,
+        	"format": "{name} {icon}",
+        	"format-icons": {
+        		"locked": "",
+        		"unlocked": ""
+        	}
+    },
+
+	"power-profiles-daemon": {
+      		"format": "{icon}",
+      		"tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      		"tooltip": true,
+      		"format-icons": {
+        		"default": "⚡",
+        		"performance": "⚡",
+        		"balanced": "⚖️",
+        		"power-saver": "🍃"
+      		}
+    	},
+
+	"temperature": {
+        	// "thermal-zone": 2,
+        	// "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        	"critical-threshold": 80,
+        	// "format-critical": "{temperatureC}°C {icon}",
+        	"format": "{temperatureC}°C {icon}",
+        	"format-icons": ["", "", ""]
+    	}
+
+
+}
