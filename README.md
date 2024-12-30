@@ -19,10 +19,14 @@ yay -S vim
 ```
 ### Hyprland
 ```
-yay -S hyprland hyprpaper hyprlock hypridle nwg-look qt5ct alacritty thunar firefox rofi flameshot
+yay -S hyprland hyprpaper hyprlock hypridle nwg-look qt5ct alacritty thunar firefox rofi flameshot ttf-ms-win11-auto ttf-liberation ttf-dejavu
 ```
 Extra packages extra/blueman for bluetooth support, extra/virt-manager for QEMU support
 #### Waybar
 ```
-$ yay -S waybar
+yay -S waybar ttf-font-awesome noto-fonts-emoji
+```
+### Alacritty
+```
+yay -S alacritty ttf-cascadia-code
 ```
