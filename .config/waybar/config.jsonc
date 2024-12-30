@@ -22,7 +22,6 @@
         "cpu",
         "memory",
 	"disk",
-        "temperature",
         "backlight",
         "keyboard-state",
         "battery",
@@ -92,7 +91,7 @@
 
 	"network": {
         	// "interface": "wlp2*", // (Optional) To force the use of this interface
-        	"format-wifi": " {essid} ({signalStrength}%) | ",
+        	"format-wifi": "🛜 {essid} ({signalStrength}%) | ",
         	"format-ethernet": "🌍 {ipaddr} | ",
         	"tooltip": false,
         	"format-linked": " {ifname} (No IP) ",
@@ -112,7 +111,7 @@
 
 	"disk": {
     		"interval": 60,
-    		"format": "💾 {percentage_used}% | ",
+    		"format": "💾 {percentage_used}% |",
 		"path": "/"
 	},
 
@@ -140,7 +139,7 @@
 
 	"backlight": {
         	// "device": "acpi_video1",
-        	"format": "{percent}% {icon}",
+        	"format": "{percent}% {icon} |",
         	"format-icons": ["", "", "", "", "", "", "", "", ""]
     	},
 
@@ -150,14 +149,14 @@
             		"warning": 30,
             		"critical": 15
         	},
-        	"format": "{capacity}% {icon}",
-        	"format-full": "{capacity}% {icon}",
-        	"format-charging": "{capacity}% 🔌",
-        	"format-plugged": "{capacity}% ✅",
-        	"format-alt": "{time} {icon}",
+        	"format": "{capacity}% {icon} |",
+        	"format-full": "{capacity}% ✅ |",
+        	"format-charging": "{capacity}% 🔌 |",
+        	"format-plugged": "{capacity}% ✅ |",
+        	"format-alt": "{time} {icon} |",
         	// "format-good": "", // An empty format will hide the module
         	// "format-full": "",
-        	"format-icons": ["", "", "", "", ""]
+        	"format-icons": ["🪫", "🪫", "🔋", "🔋", "🔋"]
     	},
 
    	"keyboard-state": {
@@ -187,8 +186,8 @@
         	// "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         	"critical-threshold": 80,
         	// "format-critical": "{temperatureC}°C {icon}",
-        	"format": "{temperatureC}°C {icon}",
-        	"format-icons": ["", "", ""]
+        	"format": "{temperatureC}°C {icon} |",
+        	"format-icons": ["🌡️", "🌡️", "🌡️"]
     	}
 
 
