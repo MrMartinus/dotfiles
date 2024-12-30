@@ -25,7 +25,7 @@ Extra packages extra/blueman for bluetooth support, extra/virt-manager for QEMU 
 Add QT_QPA_PLATFORMTHEME=qt5ct to /etc/environment
 #### Waybar
 ```
-yay -S waybar ttf-font-awesome noto-fonts-emoji
+yay -S waybar ttf-font-awesome noto-fonts-emoji inotify-tools
 ```
 ### Alacritty
 ```
