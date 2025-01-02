@@ -19,7 +19,7 @@ yay -S vim
 ```
 ### Hyprland
 ```
-yay -S hyprland hyprpaper hyprlock hypridle nwg-look qt5ct alacritty thunar firefox rofi flameshot ttf-ms-win11-auto ttf-liberation ttf-dejavu papirus-icon-theme arc-gtk-theme elementary-icon-theme polkit-gnome waypaper
+yay -S hyprland hyprpaper hyprlock hypridle nwg-look qt5ct alacritty thunar firefox rofi flameshot ttf-ms-win11-auto ttf-liberation ttf-dejavu papirus-icon-theme arc-gtk-theme elementary-icon-theme polkit-gnome waypaper brightnessctl
 ```
 Extra packages extra/blueman for bluetooth support, extra/virt-manager for QEMU support
 Add QT_QPA_PLATFORMTHEME=qt5ct to /etc/environment
