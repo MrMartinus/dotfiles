@@ -24,6 +24,7 @@ call plug#begin()
 Plug 'tpope/vim-sensible'
 " Plug 'neoclide/jsonc.vim'
 Plug 'elzr/vim-json'
-Plug 'ap/vim-css-color'
+" Plug 'ap/vim-css-color'
+Plug 'lilydjwg/colorizer'
 
 call plug#end()

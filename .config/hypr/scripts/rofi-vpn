@@ -1,0 +1,7 @@
+#!/bin/sh
+CHOICE=$(printf '%s\n' "Start" "Stop" | rofi -dmenu -p 'VPN Menu' -theme Arc-Dark -icon-theme "Papirus" -show-icons -terminal alacritty -font 'DejaVu Sans Mono 20')
+case $CHOICE in
+    Start) sudo systemctl start openvpn-client@doma.service ;;
+    Stop) sudo systemctl stop openvpn-client@doma.service ;;
+esac
+

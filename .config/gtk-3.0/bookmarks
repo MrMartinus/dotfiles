@@ -5,3 +5,5 @@ file:///home/martin/Video
 file:///home/martin/Dokumenty
 smb://home_nas/matko/ Home_NAS
 smb://home_nas/public/ Public_NAS
+smb://10.8.0.1/matko/ Home_NAS - VPN
+smb://10.8.0.1/public/ Public_NAS - VPN
