@@ -1,10 +1,10 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
     //"height": 32, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 0, // Gaps between modules (4px)
+    "spacing": 0, // Gaps between modules (0px)
     // Choose the order of the modules
     "modules-left": [
 	"custom/logo",
@@ -23,7 +23,7 @@
         "memory",
 	"disk",
         "backlight",
-        "keyboard-state",
+        // "keyboard-state",
         "battery",
         "clock",
         "tray",
@@ -91,11 +91,12 @@
 
 	"network": {
         	// "interface": "wlp2*", // (Optional) To force the use of this interface
-        	"format-wifi": "🛜 {essid} ({signalStrength}%) | ",
+        	// "format-wifi": "🛜 {essid} ({signalStrength}%) | ",
+        	"format-wifi": "🛜 {essid} ({ipaddr}) | ",
         	"format-ethernet": "🌍 {ipaddr} | ",
         	"tooltip": false,
-        	"format-linked": " {ifname} (No IP) ",
-        	"format-disconnected": "⚠️ Disconnected"
+        	"format-linked": " {ifname} (No IP) | ",
+        	"format-disconnected": "⚠️ Disconnected | "
     	},
 
 	"cpu": {
@@ -111,7 +112,7 @@
 
 	"disk": {
     		"interval": 60,
-    		"format": "💾 {percentage_used}% |",
+    		"format": "💾 {percentage_used}% | ",
 		"path": "/"
 	},
 
@@ -139,7 +140,8 @@
 
 	"backlight": {
         	// "device": "acpi_video1",
-        	"format": "{percent}% {icon} |",
+        	"format": "{icon} {percent}% | ",
+		"tooltip": false,
         	"format-icons": ["", "", "", "", "", "", "", "", ""]
     	},
 
@@ -149,11 +151,11 @@
             		"warning": 30,
             		"critical": 15
         	},
-        	"format": "{capacity}% {icon} |",
-        	"format-full": "{capacity}% ✅ |",
-        	"format-charging": "{capacity}% 🔌 |",
-        	"format-plugged": "{capacity}% ✅ |",
-        	"format-alt": "{time} {icon} |",
+        	"format": "{icon} {capacity}% | ",
+        	"format-full": "✅{capacity}% |",
+        	"format-charging": "🔌 {capacity}% |",
+        	"format-plugged": "✅ {capacity}% |",
+        	"format-alt": " {icon} {time} |",
         	// "format-good": "", // An empty format will hide the module
         	// "format-full": "",
         	"format-icons": ["🪫", "🪫", "🔋", "🔋", "🔋"]
