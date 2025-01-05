@@ -1,0 +1,3 @@
+# ignores vim plugins and history
+*.netrwhist
+plugged/
