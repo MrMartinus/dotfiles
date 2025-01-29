@@ -1,8 +1,11 @@
 refresh-on-startup yes
 reload-threads 100
+browser "firefox %u"
+
 bind-key SPACE macro-prefix 
 bind-key ESC quit
-macro v set browser "mpv %u" ; open-in-browser ; set browser "elinks %u"
+bind-key p toggle-article-read
+macro v set browser "mpv %u" ; open-in-browser ; set browser "firefox %u"
 
 # col # item              # fg      # bg
 color background          cyan     default        # the most bottom bar
