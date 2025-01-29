@@ -1,5 +1,3 @@
-"query:YouTube:tags # \"YouTube\""
-
 https://www.youtube.com/feeds/videos.xml?channel_id=UCvQ4C0f9_OWRf1uyobwqOwA
 https://www.youtube.com/feeds/videos.xml?channel_id=UCwHwDuNd9lCdA7chyyquDXw
 https://www.youtube.com/feeds/videos.xml?channel_id=UCxsg_toldz_dCoL2QXQKw1w
@@ -67,6 +65,4 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCEfYjuBnu2SoADS8PGZ_TCQ
 https://www.youtube.com/feeds/videos.xml?channel_id=UCDYGW-iLUHok2KRTOE0uCug
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMkZyKwX-pLboRxgOeJUNCQ
 
-"query:Správy:tags # \"Správy\""
-
-https://www.aktuality.sk/rss/
+https://www.aktuality.sk/rss/ "News"
