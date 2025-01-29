@@ -1,0 +1,14 @@
+refresh-on-startup yes
+reload-threads 100
+bind-key SPACE macro-prefix 
+bind-key ESC quit
+macro v set browser "mpv %u" ; open-in-browser ; set browser "elinks %u"
+
+# col # item              # fg      # bg
+color background          color7   default        # the most bottom bar
+color listnormal          color7   default        # unfocused and without N
+color listnormal_unread   color7   default        # unfocused and with N
+color listfocus           color7   color8         # focused and without N
+color listfocus_unread    color7   color8   bold  # focused but with N
+color info                color0   color1         # bottom and top info bars
+color article             color7   default        # content of an article
