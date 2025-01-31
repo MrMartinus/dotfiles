@@ -38,13 +38,17 @@ yay -S eza fastfetch aur/shell-color-scripts-git
 
 ### Hyprland
 ```
-yay -S hyprland hyprpaper hyprlock hypridle nwg-look qt5ct alacritty thunar firefox rofi flameshot ttf-ms-win11-auto ttf-liberation ttf-dejavu papirus-icon-theme arc-gtk-theme elementary-icon-theme polkit-gnome waypaper brightnessctl dunst
+yay -S hyprland hyprpaper hyprlock hypridle nwg-look qt5ct alacritty thunar firefox rofi ttf-ms-win11-auto ttf-liberation ttf-dejavu papirus-icon-theme arc-gtk-theme elementary-icon-theme polkit-gnome waypaper brightnessctl dunst
 ```
 Extra packages extra/blueman for bluetooth support, extra/virt-manager for QEMU support
 Add QT_QPA_PLATFORMTHEME=qt5ct to /etc/environment
 #### Waybar
 ```
 yay -S waybar ttf-font-awesome noto-fonts-emoji inotify-tools pavucontrol
+```
+#### Grimblast
+```
+yay -S jq grim slurp wl-clipboard libnotify hyprpicker
 ```
 
 ### Tealdeer
@@ -57,3 +61,7 @@ yay -S tealdeer
 yay -S vim
 ```
 
+### Newsboat & mpv
+```
+yay -S newsboat mpv
+```
