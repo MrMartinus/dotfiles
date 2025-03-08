@@ -61,7 +61,14 @@ yay -S tealdeer
 yay -S vim
 ```
 
-### Newsboat & mpv
+### Newsboat
+Note: mpv is needed for video playback
 ```
-yay -S newsboat mpv
+yay -S newsboat
+```
+
+### mpv
+Note: mpv expect yt-dlp.settings to be located in ~/.config
+```
+yay -S mpv yt-dlp
 ```
