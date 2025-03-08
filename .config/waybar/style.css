@@ -2,6 +2,8 @@
     font-family: "DejaVu Sans Mono";
     font-size: 16px;
     color: #e6e8ea;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 
@@ -15,13 +17,10 @@
 
 .modules-left {
     background-color: #222222;
-    padding: 0px 0px 0px 0px;
 }
 
 .modules-right {
     background-color: #222222;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
 }
 
 
@@ -57,7 +56,6 @@ window#waybar {
 #window {
     color: #ffffff;
     background-color: #4a4a4a; /* #285577 */
-    padding: 0px 0px 0px 0px;
 }
 window#waybar.empty #window {
     background-color: transparent;
@@ -65,45 +63,42 @@ window#waybar.empty #window {
 }
 window#waybar.empty {
     background-color: #4a4a4a;
-    padding: 0px 0px 0px 0px;
 }
 
 #idle_inhibitor {
-    padding: 0px 0px 0px 0px;
 }
 
 #custom-updates {
-    padding: 0px 0px 0px 0px;
 }
 
 #pulseaudio {
-    padding: 0px 0px 0px 0px;
 }
 
 #network {
-    padding: 0px 0px 0px 0px;
 }
 #network.disconnected {
     color: #ff5555;
 }
 
 #cpu{
-    padding: 0px 0px 0px 0px;
 }
 #memory{
-    padding: 0px 0px 0px 0px;
 }
 #disk{
-    padding: 0px 0px 0px 0px;
 }
 
 #clock {
-    padding: 0px 0px 0px 0px;
 }
 
 #tray{
     background-color: #323232;
     padding: 0px 5px 0px 5px;
+    margin: 0px 0px 0px 0px;
+}
+#tray menu{
+}
+#tray menu menuitem{
+    padding: 7px 0px 7px 0px;
 }
 
 #custom-power {
@@ -116,7 +111,6 @@ window#waybar.empty {
 
 
 #temperature, #backlight, #battery {
-    padding: 0px 0px 0px 0px;
 }
 
 #battery.critical {
