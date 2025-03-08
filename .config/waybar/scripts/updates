@@ -1,4 +1,4 @@
 #!/bin/bash
 
 updates="$(checkupdates | wc -l)"
-printf " %s \\n" "$updates"
+printf " %s" "$updates"
