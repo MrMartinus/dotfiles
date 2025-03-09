@@ -16,6 +16,7 @@ alias neofetch="fastfetch"
 alias suckless="sudo make clean install &&rm -rf config.h"
 alias pac="sudo pacman -S"
 alias hg="history |grep"
+alias mutt="neomutt"
 
 HISTSIZE= HISTFILESIZE=
 

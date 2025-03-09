@@ -23,7 +23,6 @@
         "network",
 	"custom/separator",
         "power-profiles-daemon",
-	"custom/separator",
         "cpu",
 	"custom/separator",
         "memory",
@@ -31,10 +30,8 @@
 	"disk",
 	"custom/separator",
         "backlight",
-	"custom/separator",
         // "keyboard-state",
         "battery",
-	"custom/separator",
         "clock",
         "tray",
         "custom/power"
@@ -156,7 +153,7 @@
 
 	"backlight": {
         	// "device": "acpi_video1",
-        	"format": "{icon} {percent}%",
+        	"format": "{icon} {percent}% | ",
 		"tooltip": false,
         	"format-icons": ["", "", "", "", "", "", "", "", ""]
     	},
@@ -167,11 +164,11 @@
             		"warning": 30,
             		"critical": 15
         	},
-        	"format": "{icon} {capacity}%",
-        	"format-full": "✅{capacity}%",
-        	"format-charging": "🔌 {capacity}%",
-        	"format-plugged": "✅ {capacity}%",
-        	"format-alt": "{icon} {time}",
+        	"format": "{icon} {capacity}% | ",
+        	"format-full": "✅{capacity}% | ",
+        	"format-charging": "🔌 {capacity}% | ",
+        	"format-plugged": "✅ {capacity}% | ",
+        	"format-alt": "{icon} {time} | ",
         	// "format-good": "", // An empty format will hide the module
         	// "format-full": "",
         	"format-icons": ["🪫", "🪫", "🔋", "🔋", "🔋"]
@@ -188,7 +185,7 @@
     },
 
 	"power-profiles-daemon": {
-      		"format": "{icon}",
+      		"format": "{icon} | ",
       		"tooltip-format": "Power profile: {profile}\nDriver: {driver}",
       		"tooltip": true,
       		"format-icons": {
