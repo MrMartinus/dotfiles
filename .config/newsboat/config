@@ -5,6 +5,11 @@ browser "librewolf %u"
 bind-key SPACE macro-prefix 
 bind-key ESC quit
 bind-key p toggle-article-read
+
+bind-key d pb-download
+bind-key c pb-cancel
+bind-key v pb-play
+
 macro v set browser "mpv %u" ; open-in-browser ; set browser "librewolf %u"
 
 # col # item              # fg      # bg
@@ -15,3 +20,9 @@ color listfocus           white    color8   bold  # focused and without N
 color listfocus_unread    red      color8   bold  # focused but with N
 color info                black    green    bold  # bottom and top info bars
 color article             white    default        # content of an article
+
+# Podboat
+podcast-auto-enqueue no
+download-path "~/Hudba/Podcast/%n"
+max-downloads 5
+player mpv
