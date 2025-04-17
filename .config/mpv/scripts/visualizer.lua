@@ -1,7 +1,7 @@
 -- various audio visualization
 
 local opts = {
-    mode = "novideo",
+    mode = "noalbumart",
     -- off              disable visualization
     -- noalbumart       enable visualization when no albumart and no video
     -- novideo          enable visualization when no video
@@ -15,7 +15,7 @@ local opts = {
     -- showcqtbar
     -- showwaves
 
-    quality = "medium",
+    quality = "veryhigh",
     -- verylow
     -- low
     -- medium
@@ -135,14 +135,6 @@ local axis_1 = "image/png;base64," ..
 
 local options = require 'mp.options'
 local msg     = require 'mp.msg'
-
-options.read_options(opts)
-opts.height = math.min(12, math.max(4, opts.height))
-opts.height = math.floor(opts.height)
-
-if not opts.forcewindow and mp.get_property('force-window') == "no" then
-    return
-end
 
 local function get_visualizer(name, quality, vtrack)
     local w, h, fps
@@ -328,6 +320,14 @@ local function visualizer_hook()
     if lavfi ~= "" and lavfi ~= mp.get_property("lavfi-complex", "") then
         mp.set_property("file-local-options/lavfi-complex", lavfi)
     end
+end
+
+options.read_options(opts, nil, visualizer_hook)
+opts.height = math.min(12, math.max(4, opts.height))
+opts.height = math.floor(opts.height)
+
+if not opts.forcewindow and mp.get_property('force-window') == "no" then
+    return
 end
 
 mp.add_hook("on_preloaded", 50, visualizer_hook)
