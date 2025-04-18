@@ -1,0 +1,21 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>STVR rádiá</title>
+  <link>https://www.stvr.sk/radio/radia</link>
+  <description>STVR rádio streamy</description>
+  <item>
+    <title>Rádio Slovensko</title>
+    <link>http://live.slovakradio.sk:8000/Slovensko_256.mp3.m3u</link>
+    <description>Format: mp3 Channels: 2ch (stereo) Sampling rate: 44100 Hz Bitrate: 256 kbps</description>
+  </item>
+  <item>
+    <title>Rádio Slovakia International</title>
+    <link>http://live.slovakradio.sk:8000/RSI_256.mp3.m3u</link>
+    <description>Format: mp3 Channels: 2ch (stereo) Sampling rate: 44100 Hz Bitrate: 256 kbps</description>
+  </item>
+</channel>
+
+</rss> 
