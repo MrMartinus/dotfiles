@@ -6,6 +6,6 @@ case "$CHOICE" in
 	Shutdown) systemctl poweroff ;;
 	Reboot) systemctl reboot ;;
 	Sleep) systemctl suspend ;;
-	Lock) slock ;;
+	Lock) hyprlock ;;
 	Logout) pkill Hyprland ;;
 esac
