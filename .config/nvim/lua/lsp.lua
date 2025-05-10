@@ -14,3 +14,6 @@ lspconfig.cssls.setup {}
 
 -- JSON
 lspconfig.jsonls.setup {}
+
+-- C, C++, Objective-C
+lspconfig.ccls.setup {}
