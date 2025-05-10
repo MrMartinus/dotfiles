@@ -56,9 +56,9 @@ yay -S jq grim slurp wl-clipboard libnotify hyprpicker
 yay -S tealdeer
 ```
 
-### Vim
+### NeoVim
 ```
-yay -S vim
+yay -S neovim ripgrep luarocks python-pynvim pyright lua-language-server bash-language-server vscode-css-languageserver vscode-json-languageserver ccls
 ```
 
 ### Newsboat
