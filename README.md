@@ -38,7 +38,7 @@ yay -S eza fastfetch aur/shell-color-scripts-git
 
 ### Hyprland
 ```
-yay -S hyprland hyprpaper hyprlock hypridle nwg-look qt5ct alacritty thunar firefox rofi ttf-ms-win11-auto ttf-liberation ttf-dejavu papirus-icon-theme arc-gtk-theme elementary-icon-theme polkit-gnome waypaper brightnessctl dunst hyprsunset
+yay -S hyprland hyprpaper hyprlock hypridle nwg-look qt5ct alacritty thunar firefox rofi-wayland ttf-ms-win11-auto ttf-liberation ttf-dejavu papirus-icon-theme arc-gtk-theme elementary-icon-theme polkit-gnome waypaper brightnessctl dunst hyprsunset
 ```
 Extra packages extra/blueman for bluetooth support, extra/virt-manager for QEMU support
 Add QT_QPA_PLATFORMTHEME=qt5ct to /etc/environment
