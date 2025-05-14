@@ -86,7 +86,7 @@ https://api.stvr.sk/xml/radio_archive.xml?series=1125 "Podcast" "Slovensko"
 https://api.stvr.sk/xml/podcast_archive.xml?series=1488 "Podcast" "RSI" "STVR"
 https://api.stvr.sk/xml/podcast_archive.xml?series=1487 "Podcast" "RSI" "STVR"
 https://api.stvr.sk/xml/podcast_archive.xml?series=1484 "Podcast" "RSI" "STVR"
-https://raw.githubusercontent.com/MrMartinus/dotfiles/refs/heads/main/.config/newsboat/STVR_radio.rss "STVR"
+file:///home/martin/.config/newsboat/STVR_radio.rss "STVR"
 
 https://www.aktuality.sk/rss/ "News"
 https://zive.aktuality.sk/rss/najnovsie/ "News"
