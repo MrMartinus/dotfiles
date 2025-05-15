@@ -15,7 +15,12 @@ require("lazy").setup({
     "ellisonleao/gruvbox.nvim",
     "neovim/nvim-lspconfig",
     "vimwiki/vimwiki",
-
+    {
+    "catgoose/nvim-colorizer.lua",
+    event = "BufReadPre",
+    opts = { -- set to setup table
+    },
+    },
     {
   "saghen/blink.cmp",
   -- optional: provides snippets for the snippet source
