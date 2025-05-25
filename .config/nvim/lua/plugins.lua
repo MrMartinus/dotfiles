@@ -12,7 +12,11 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+    -- colorschemes
     "ellisonleao/gruvbox.nvim",
+    "navarasu/onedark.nvim",
+    "alexmozaidze/palenight.nvim",
+
     "neovim/nvim-lspconfig",
     "vimwiki/vimwiki",
     {
