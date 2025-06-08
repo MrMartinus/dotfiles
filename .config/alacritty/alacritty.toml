@@ -1,6 +1,6 @@
 
 [window]
-opacity = 0.75
+opacity = 1.00
 blur = true
 dynamic_padding = true
 dynamic_title = false
@@ -61,6 +61,6 @@ mods = "Shift"
 # https://github.com/alacritty/alacritty-theme
 
 import = [
-    "~/.config/alacritty/themes/ayu_dark.toml"
+    "~/.config/alacritty/themes/palenight.toml"
 ]
 
