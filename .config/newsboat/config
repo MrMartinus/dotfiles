@@ -4,6 +4,7 @@ browser "librewolf %u"
 
 bind-key SPACE macro-prefix 
 bind-key ESC quit
+bind-key BACKSPACE quit
 bind-key p toggle-article-read
 bind-key C mark-feed-read
 bind-key A mark-all-feeds-read
