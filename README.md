@@ -58,7 +58,8 @@ yay -S tealdeer
 
 ### NeoVim
 ```
-yay -S neovim ripgrep luarocks python-pynvim pyright lua-language-server bash-language-server vscode-css-languageserver vscode-json-languageserver ccls
+yay -S neovim ripgrep luarocks ruby npm node python-pynvim pyright lua-language-server bash-language-server vscode-css-languageserver vscode-json-languageserver ccls
+npm install -g neovim
 ```
 
 ### Newsboat
