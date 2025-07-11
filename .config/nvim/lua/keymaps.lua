@@ -22,9 +22,6 @@ vim.keymap.set('n', '<CS-Down>', ':resize +2<CR>', opts)
 vim.keymap.set('n', '<CS-Left>', ':vertical resize -2<CR>', opts)
 vim.keymap.set('n', '<CS-Right>', ':vertical resize +2<CR>', opts)
 
--- VimWiki
-vim.keymap.set('n', '<C-d>', ':term encfs ~/.vimwiki/ ~/vimwiki/<CR>', opts)
-vim.keymap.set('n', '<CS-d>', ':bd | ! fusermount -u ~/vimwiki/<CR>', opts)
 -----------------
 -- Visual mode --
 -----------------

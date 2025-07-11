@@ -1,31 +1,4 @@
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
-end
-vim.opt.rtp:prepend(lazypath)
-
-require("lazy").setup({
-    -- colorschemes
-    "ellisonleao/gruvbox.nvim",
-    "navarasu/onedark.nvim",
-    "alexmozaidze/palenight.nvim",
-
-    "neovim/nvim-lspconfig",
-    "vimwiki/vimwiki",
-    {
-    "catgoose/nvim-colorizer.lua",
-    event = "BufReadPre",
-    opts = { -- set to setup table
-    },
-    },
-    {
+return {
   "saghen/blink.cmp",
   -- optional: provides snippets for the snippet source
   dependencies = { "rafamadriz/friendly-snippets" },
@@ -76,6 +49,5 @@ require("lazy").setup({
     -- See the fuzzy documentation for more information
     fuzzy = { implementation = "prefer_rust_with_warning" }
   },
-  opts_extend = { "sources.default" }
-    }
-})
+  opts_extend = { "sources.default" },
+}
