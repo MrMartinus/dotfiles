@@ -61,6 +61,6 @@ mods = "Shift"
 # https://github.com/alacritty/alacritty-theme
 
 import = [
-    "~/.config/alacritty/themes/palenight.toml"
+    "~/.config/alacritty/themes/enfocado_dark.toml"
 ]
 
