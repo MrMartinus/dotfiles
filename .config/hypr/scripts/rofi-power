@@ -1,8 +1,7 @@
 #!/bin/sh
-CHOICE=$(printf '%s\n' "Power Saver" "Balanced" "Performance" | rofi -dmenu -p 'Power Menu' -theme Arc-Dark -icon-theme "Papirus" -show-icons -terminal alacritty -font 'DejaVu Sans Mono 20')
+CHOICE=$(printf '%s\n' "Battery" "Auto" "AC" | rofi -dmenu -p 'Power Menu' -theme Arc-Dark -icon-theme "Papirus" -show-icons -terminal alacritty -font 'DejaVu Sans Mono 20')
 case $CHOICE in
-    "Power Saver") powerprofilesctl set power-saver ;;
-    "Balanced") powerprofilesctl set balanced ;;
-    "Performance") powerprofilesctl set performance ;;
+    "Battery") sudo tlp bat ;;
+    "Auto") sudo tlp start ;;
+    "AC") sudo tlp ac ;;
 esac
-
