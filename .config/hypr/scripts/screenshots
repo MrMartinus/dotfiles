@@ -1,2 +1,2 @@
 #!/bin/sh
-~/.config/hypr/scripts/grimblast --cursor --freeze copysave area ~/Obrázky/'Snímky obrazovky'/$(date -u +%Y-%m-%d_%H-%M-%S).png
+~/.config/hypr/scripts/grimblast --cursor --freeze copysave area ~/Pictures/'Snímky obrazovky'/$(date -u +%Y-%m-%d_%H-%M-%S).png
