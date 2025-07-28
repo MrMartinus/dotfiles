@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
+<xkbConfigRegistry version="1.1">
+  <layoutList>
+    <layout>
+      <configItem>
+        <name>sk-numbers</name>
+        <shortDescription>sknum</shortDescription>
+        <description>Slovak (SK, custom keymap with numbers)</description>
+        <countryList>
+          <iso3166Id>SK</iso3166Id>
+        </countryList>
+        <languageList>
+          <iso639Id>slk</iso639Id>
+        </languageList>
+      </configItem>
+    </layout>
+  </layoutList>
+</xkbConfigRegistry>
+
+

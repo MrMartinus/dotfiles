@@ -1,0 +1,4 @@
+! option   = symbols
+  sk-numbers  = +sk-numbers
+
+! include %S/evdev
