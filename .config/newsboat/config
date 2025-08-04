@@ -27,7 +27,7 @@ color article             white    default        # content of an article
 # Podboat
 podcast-auto-enqueue no
 download-filename-format "%n/%F - %t.%e"
-download-path "~/Hudba/Podcast/"
+download-path "~/Music/Podcast"
 podlist-format "%4i [%6dMB/%6tMB] [%5p %%] [%12K] %-20S %F"
 max-downloads 5
 player "mpv"
