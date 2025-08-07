@@ -4,12 +4,12 @@
 
 ## Installation
 
-### Install yay
-Yay is needed for installation of packages from AUR
+### Install paru
+Paru is needed for installation of packages from AUR
 ```
-pacman -S git
-git clone https://aur.archlinux.org/yay.git
-cd yay
+pacman -S git base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
 makepkg -si
 ```
 
