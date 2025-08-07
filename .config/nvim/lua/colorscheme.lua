@@ -5,3 +5,11 @@ if not is_ok then
     vim.notify('colorscheme ' .. colorscheme .. ' not found!')
     return
 end
+
+vim.cmd [[
+highlight Normal guibg=NONE
+highlight NonText guibg=NONE
+highlight Normal ctermbg=NONE
+highlight NonText ctermbg=NONE
+]]
+
