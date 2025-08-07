@@ -1,6 +1,6 @@
 
 [window]
-opacity = 1.00
+opacity = 0.60
 blur = true
 dynamic_padding = true
 dynamic_title = false
