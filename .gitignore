@@ -6,4 +6,4 @@ plugged/
 lazy-lock.json
 
 # ignores thunar bookmarks
-gtk-3.0/bookmarks
+.config/gtk-3.0/bookmarks
