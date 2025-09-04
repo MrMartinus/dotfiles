@@ -4,3 +4,6 @@ plugged/
 
 # ignores nvim lazy lock file
 lazy-lock.json
+
+# ignores thunar bookmarks
+gtk-3.0/bookmarks
