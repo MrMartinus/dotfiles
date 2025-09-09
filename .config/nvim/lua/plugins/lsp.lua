@@ -15,6 +15,9 @@ return {
         -- CSS, LESS, SASS
         lspconfig.cssls.setup {}
 
+        -- HTML
+        lspconfig.html.setup {}
+
         -- JSON
         lspconfig.jsonls.setup {}
 
