@@ -19,6 +19,8 @@ alias hg="history |grep"
 alias mutt="neomutt"
 alias vim="nvim"
 alias yay="paru"
+alias encfs="gocryptfs"
+alias rcopy="rsync -avh --progress --delete"
 
 HISTSIZE= HISTFILESIZE=
 
