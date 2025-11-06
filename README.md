@@ -31,6 +31,11 @@ stow .
 yay -S alacritty ttf-cascadia-code
 ```
 
+### Kitty
+```
+yay -S kitty ttf-cascadia-code
+```
+
 ### Bash
 ```
 yay -S eza fastfetch aur/shell-color-scripts-git
