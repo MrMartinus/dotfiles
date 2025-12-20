@@ -1,27 +1,25 @@
 return {
     "neovim/nvim-lspconfig",
-    conf = function()
-        local lspconfig = vim.lsp.config()
-
+    config = function()
         -- Python
-        lspconfig.pyright.setup {}
+        vim.lsp.enable("pyright")
 
         -- Lua
-        lspconfig.lua_ls.setup {}
+        vim.lsp.enable('lua_ls')
 
         -- BASH
-        lspconfig.bashls.setup {}
+        vim.lsp.enable("bashls")
 
         -- CSS, LESS, SASS
-        lspconfig.cssls.setup {}
+        vim.lsp.enable("cssls")
 
         -- HTML
-        lspconfig.html.setup {}
+        vim.lsp.enable("html")
 
         -- JSON
-        lspconfig.jsonls.setup {}
+        vim.lsp.enable("jsonls")
 
         -- C, C++, Objective-C
-        lspconfig.ccls.setup {}
+        vim.lsp.enable("clangd")
     end,
 }
