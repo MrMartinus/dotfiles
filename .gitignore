@@ -1,7 +1,3 @@
-# ignores vim plugins and history
-*.netrwhist
-plugged/
-
 # ignores nvim lazy lock file
 lazy-lock.json
 
