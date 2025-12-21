@@ -3,78 +3,34 @@
 
 
 ## Installation
-
-### Install paru
-Paru is needed for installation of packages from AUR
 ```
-pacman -S git base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
-```
-
-### Install dotfiles
-```
-yay -S stow
-cd ~
 git clone git@github.com:MrMartinus/dotfiles.git
 cd dotfiles
-stow .
+make paru yt-dlp install
 ```
 
+## What configs are included?
+- Alactitty
+- Kitty
+- Bash
+- Hyprland
+- Waybar
+- Grimblast
+- Tealdeer
+- NeoVim
+- newsboat
+- mpv
 
+## What programs are also included?
+- Web browser (Librewolf)
+- File browser (Thunar)
+- fastfetch
+- nwg-look
 
-## Requirements
-
-### Alacritty
-```
-yay -S alacritty ttf-cascadia-code
-```
-
-### Kitty
-```
-yay -S kitty ttf-cascadia-code
-```
-
-### Bash
-```
-yay -S eza fastfetch aur/shell-color-scripts-git
-```
-
-### Hyprland
-```
-yay -S hyprland hyprpaper hyprlock hypridle nwg-look qt5ct alacritty thunar firefox rofi ttf-ms-win11-auto ttf-liberation ttf-dejavu papirus-icon-theme arc-gtk-theme elementary-icon-theme polkit-gnome waypaper brightnessctl dunst hyprsunset
-```
-Extra packages extra/blueman for bluetooth support, extra/virt-manager for QEMU support
-Add QT_QPA_PLATFORMTHEME=qt5ct to /etc/environment
-#### Waybar
-```
-yay -S waybar ttf-font-awesome noto-fonts-emoji inotify-tools pavucontrol
-```
-#### Grimblast
-```
-yay -S jq grim slurp wl-clipboard libnotify hyprpicker
-```
-
-### Tealdeer
-```
-yay -S tealdeer
-```
-
-### NeoVim
-```
-yay -S neovim ripgrep luarocks ruby npm node python-pynvim pyright lua-language-server bash-language-server vscode-css-languageserver vscode-html-languageserver vscode-json-languageserver clang
-npm install -g neovim
-```
-
-### Newsboat
-Note: mpv is needed for video playback
-```
-yay -S newsboat
-```
-
-### mpv
-Note: mpv expect yt-dlp.settings to be located in ~/.config
-```
-yay -S mpv yt-dlp
-```
+## What is not included?
+- Display manager (Ly)
+- Image viewer (Ristretto)
+- Text editor (Mousepad)
+- Office suite (Libreoffice)
+- VM software (VirtualBox or QEMU)
+- Printer service (CUPS)

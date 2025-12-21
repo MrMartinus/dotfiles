@@ -1,0 +1,12 @@
+\.git
+\.gitignore
+\.gitmodules
+
+^/README.*
+^/LICENSE.*
+^/COPYING
+
+^/Makefile
+^/packages.txt
+
+yt-dlp.settings-example
