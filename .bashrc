@@ -5,18 +5,14 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-#alias ls="ls --color=auto"
 alias ls="eza --color=auto"
 alias lsal="eza --color=auto -al"
 alias grep="grep --color=auto"
 alias cls="clear"
 alias md="mkdir"
-alias update="paru -Syu; pkill -RTMIN+15 dwmblocks; pkill -RTMIN+15 waybar; flatpak update"
+alias update="paru -Syu; pkill -RTMIN+15 waybar; flatpak update"
 alias neofetch="fastfetch"
-alias suckless="sudo make clean install &&rm -rf config.h"
-alias pac="sudo pacman -S"
 alias hg="history |grep"
-alias mutt="neomutt"
 alias vim="nvim"
 alias yay="paru"
 alias encfs="gocryptfs"
