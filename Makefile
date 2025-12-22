@@ -1,23 +1,22 @@
 all:
-	stow --verbose --target=$$HOME --restow */
+	stow --verbose --target=~ --restow .
 
 clean:
-	stow --verbose --target=$$HOME --delete */
+	stow --verbose --target=~ --delete .
 
 install: all
-	paru -S --needed -< ./packages.txt
-	npm install -g neovim
-	sudo echo "QT_QPA_PLATFORMTHEME=qt5ct" >> /etc/environment
+	paru -Syyu --needed --noconfirm -< ./packages.txt
+	paru -S librewolf-bin arc-gtk-theme waypaper shell-color-scripts-git
+	sudo npm install -g neovim
+	echo "QT_QPA_PLATFORMTHEME=qt5ct" | sudo tee -a /etc/environment
 	sudo systemctl enable --now NetworkManager
 	systemctl --user enable pipewire.service
 
 paru:
-	sudo pacman -S --needed base-devel git stow
-	git clone https://aur.archlinux.org/paru.git
-	cd paru
-	makepkg -si
+	sudo pacman -S --needed base-devel git rust stow
+	git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si
 	cd ..
 	rm -rf paru
 
 yt-dlp:
-	ln -sf ./.config/yt-dlp.settings-example $$HOME/.config/yt-dlp.settings
+	ln -sf ./.config/yt-dlp.settings-example ~/.config/yt-dlp.settings

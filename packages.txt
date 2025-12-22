@@ -7,7 +7,6 @@ kitty
 ttf-cascadia-code
 eza
 fastfetch
-shell-color-scripts-git
 hyprland
 hyprpaper
 hyprlock
@@ -21,16 +20,12 @@ gvfs-dnssd
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
-librewolf
 rofi
-ttf-ms-win11-auto
 ttf-liberation
 ttf-dejavu
 papirus-icon-theme
-arc-gtk-theme
 elementary-icon-theme
 polkit-gnome
-waypaper
 brightnessctl
 dunst
 hyprsunset
@@ -56,7 +51,7 @@ ripgrep
 luarocks
 ruby
 npm
-node
+nodejs
 python-pynvim
 pyright
 lua-language-server
