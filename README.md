@@ -3,10 +3,11 @@
 
 
 ## Installation
+Before the installation you may need to remove your dotfiles, so they can be replaced by the installer. Also if .config directory does not exist, create it
 ```
 git clone git@github.com:MrMartinus/dotfiles.git
 cd dotfiles
-make paru yt-dlp install
+make paru install yt-dlp
 ```
 
 ## What configs are included?

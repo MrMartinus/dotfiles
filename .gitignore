@@ -3,3 +3,9 @@ lazy-lock.json
 
 # ignores thunar bookmarks
 .config/gtk-3.0/bookmarks
+
+# ignore systemd files
+.config/systemd/
+
+# ignore yt-dlp.settings
+yt-dlp.settings
