@@ -1,8 +1,8 @@
 all:
-	stow --verbose --target=~ --restow .
+	stow --verbose --target=$$HOME --restow .
 
 clean:
-	stow --verbose --target=~ --delete .
+	stow --verbose --target=$$HOME --delete .
 
 install: all
 	paru -Syyu --needed --noconfirm -< ./packages.txt
