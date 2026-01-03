@@ -26,6 +26,6 @@ export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput se
 
 export PATH="$PATH:/home/martin/.local/bin"
 export MANPAGER="nvim +Man!"
-
+export TERM=xterm-256color
 # color scripts https://gitlab.com/dwt1/shell-color-scripts
 colorscript -r
