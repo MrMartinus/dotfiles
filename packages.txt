@@ -68,3 +68,11 @@ gnome-keyring
 xdg-user-dirs
 gocryptfs
 rsync
+catfish
+thunar-volman
+thunar-archive-plugin
+thunar-media-tags-plugin
+ffmpegthumbnailer
+libgsf
+libgepub
+libopenraw
