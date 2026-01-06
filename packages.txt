@@ -66,3 +66,5 @@ pipewire-pulse
 networkmanager
 gnome-keyring
 xdg-user-dirs
+gocryptfs
+rsync
