@@ -11,6 +11,7 @@ install: all
 	echo "QT_QPA_PLATFORMTHEME=qt5ct" | sudo tee -a /etc/environment
 	sudo systemctl enable --now NetworkManager bluetooth
 	systemctl --user enable pipewire.service
+	xdg-user-dirs-update
 
 paru:
 	sudo pacman -S --needed base-devel git rust stow

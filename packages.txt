@@ -64,3 +64,5 @@ pipewire
 pipewire-jack
 pipewire-pulse
 networkmanager
+gnome-keyring
+xdg-user-dirs
