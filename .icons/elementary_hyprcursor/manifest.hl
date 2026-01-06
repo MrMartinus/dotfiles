@@ -1,0 +1,4 @@
+name = Elementary cursor theme for hyprcursor
+description = Elementary cursor theme edited to work with hyprland
+version = 0.1
+cursors_directory = hyprcursors
