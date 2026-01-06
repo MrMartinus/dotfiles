@@ -9,7 +9,7 @@ install: all
 	paru -S librewolf-bin arc-gtk-theme waypaper shell-color-scripts-git
 	sudo npm install -g neovim
 	echo "QT_QPA_PLATFORMTHEME=qt5ct" | sudo tee -a /etc/environment
-	sudo systemctl enable --now NetworkManager
+	sudo systemctl enable --now NetworkManager bluetooth
 	systemctl --user enable pipewire.service
 
 paru:
