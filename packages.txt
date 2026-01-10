@@ -32,6 +32,7 @@ libgepub
 libgsf
 libnotify
 libopenraw
+lua51
 lua-language-server
 luarocks
 mpv
