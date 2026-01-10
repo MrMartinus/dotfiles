@@ -76,3 +76,4 @@ ffmpegthumbnailer
 libgsf
 libgepub
 libopenraw
+pacman-contrib
